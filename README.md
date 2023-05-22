@@ -23,7 +23,11 @@ Revit files have the following extensions:
 
 ## Installation
 
-`Todo`
+Download `ServerManager.zip` to install the extension.
+
+* [ServerManager.zip](https://github.com/dwmkerr/sharpshell/releases/latest/)
+
+`Todo...`
 
 ## Release
 
