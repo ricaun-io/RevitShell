@@ -3,7 +3,7 @@
 ; created 22 05 2023
 ; by Luiz Henrique Cassettari 
 
-#define AppId "{116CDA5A-E6C5-4c2f-A9EF-B3222116B8C8}"
+#define AppId "{75C82D94-C2D8-4F8A-AB17-F98A8BC0E712}"
 #define AppName "RevitShell"
 #define AppVersion "1.0.0"
 #define AppPublisher "ricaun"
