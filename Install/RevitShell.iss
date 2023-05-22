@@ -1,0 +1,66 @@
+; RevitShell.iss
+; 
+; created 22 05 2023
+; by Luiz Henrique Cassettari 
+
+#define AppId "{116CDA5A-E6C5-4c2f-A9EF-B3222116B8C8}"
+#define AppName "RevitShell"
+#define AppVersion "1.0.0"
+#define AppPublisher "ricaun"
+#define AppComments "RevitShell"
+#define AppBundle "RevitShell"
+#define AppURL "https://github.com/ricaun/RevitShell"
+#define AppEmail ""
+
+[Setup]
+
+AppId={{#AppId}}
+AppName={#AppName}
+AppVersion={#AppVersion}
+AppPublisher={#AppPublisher}
+AppComments={#AppComments}
+
+VersionInfoVersion={#AppVersion}
+
+AppPublisherURL={#AppURL}
+AppSupportURL={#AppURL}
+AppUpdatesURL={#AppURL}
+
+DefaultDirName="C:\ProgramData\Autodesk\ApplicationPlugins\{#AppBundle}"
+DisableWelcomePage=no
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+OutputBaseFilename="{#AppName} {#AppVersion}"
+UninstallDisplayName="{#AppName}"
+
+;LicenseFile=License.rtf
+
+; ICON CONFIGURATION
+;SetupIconFile=icon.ico
+UninstallDisplayIcon={app}\unins000.exe
+
+; Size: 55x55
+;WizardSmallImageFile=icon55.bmp   
+; Size: 164x314
+;WizardImageFile = icon164.bmp
+
+; Languages
+ShowLanguageDialog=no
+
+[UninstallDelete]
+Type: filesandordirs; Name: "{app}\*.*"
+
+[Dirs]
+Name: {app}; Permissions: users-full
+
+[Languages]
+Name: "en"; MessagesFile: "compiler:Default.isl";
+
+[Files]
+Source: "..\{#AppBundle}\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs signonce
+
+[Run]
+Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "install ""{app}\RevitShell.dll"" -codebase"
+
+[UninstallRun]
+Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "uninstall ""{app}\RevitShell.dll""";
