@@ -15,7 +15,7 @@ Revit files have the following extensions:
 * Project Template: `.rte`
 * Family Template: `.rft`
 
-## Dependences
+## Dependencies
 
 * [SharpShell](https://github.com/dwmkerr/sharpshell)
 * [ricaun.Revit.FileInfo](https://github.com/ricaun-io/ricaun.Revit.FileInfo)
