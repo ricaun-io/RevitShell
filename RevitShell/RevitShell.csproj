@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="SharpShell" Version="*" />
+    <PackageReference Include="ServerRegistrationManager" Version="*" />
     <PackageReference Include="ricaun.Revit.FileInfo" Version="*" />
     <PackageReference Include="ricaun.Revit.Installation" Version="*" />
   </ItemGroup>
