@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Update Package References
 - Add Build Project with installation
 - Update file order and version.
+- Update iss `version` with the project version.
 
 ## [1.0.0] / 2023-05-22
 - First Pre Release

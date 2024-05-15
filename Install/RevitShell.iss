@@ -5,7 +5,7 @@
 
 #define AppId "{75C82D94-C2D8-4F8A-AB17-F98A8BC0E712}"
 #define AppName "RevitShell"
-#define AppVersion "1.0.1"
+#define AppVersion "1.0.0"
 #define AppPublisher "ricaun"
 #define AppComments "RevitShell"
 #define AppBundle "RevitShell"
