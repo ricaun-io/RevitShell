@@ -8,6 +8,12 @@
 
 RevitShell uses [SharpShell](https://github.com/dwmkerr/sharpshell) to enable the creation of Windows Shell Extensions in .NET for Revit files.
 
+## Features
+
+Show Revit File Version Information / Open Revit File in the respect Revit version.
+
+<img src=assets/RevitShell.Show.gif width=400><img src=assets/RevitShell.Open.2025.gif width=400>
+
 ## Revit Files Extension
 
 Revit files have the following extensions:
@@ -70,7 +76,7 @@ Load `RevitShell.dll` using `ServerManager.exe` and install/unistall the server.
 
 ## License
 
-This project is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia.org/wiki/MIT_License).
+This project is [licensed](LICENSE) under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
 ---
 
