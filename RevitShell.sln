@@ -14,9 +14,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Install", "Install", "{35DB0A25-27E4-493E-8015-E1A3332D4E36}"
 	ProjectSection(SolutionItems) = preProject
 		Install\RevitShell.iss = Install\RevitShell.iss
+		Install\Installation.md = Install\Installation.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Build", "Build\Build.csproj", "{21E16C70-B569-4AB2-832A-7303B79E5C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Build", "Build\Build.csproj", "{21E16C70-B569-4AB2-832A-7303B79E5C25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
