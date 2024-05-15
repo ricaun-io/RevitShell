@@ -36,7 +36,7 @@ UninstallDisplayName="{#AppName}"
 LicenseFile="..\LICENSE"
 
 ; ICON CONFIGURATION
-;SetupIconFile=icon.ico
+SetupIconFile=icon.ico
 UninstallDisplayIcon={app}\unins000.exe
 
 ; Size: 55x55
@@ -63,4 +63,4 @@ Source: "..\{#AppFolder}\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion 
 Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "install ""{app}\RevitShell.dll"" -codebase"
 
 [UninstallRun]
-Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "uninstall ""{app}\RevitShell.dll""";
+Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "uninstall ""{app}\RevitShell.dll"""; RunOnceId: "UninstallService"

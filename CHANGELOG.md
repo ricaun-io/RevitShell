@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Update file order and version.
 - Update iss `version` with the project version.
 - Update iss folder location option.
+- Add `icon.ico` on installation.
+- Add `RunOnceId` in uninstallation.
 
 ## [1.0.0] / 2023-05-22
 - First Pre Release
