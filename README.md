@@ -8,6 +8,10 @@
 
 RevitShell uses [SharpShell](https://github.com/dwmkerr/sharpshell) to enable the creation of Windows Shell Extensions in .NET for Revit files.
 
+## How to use
+
+Right-click on Revit files and click in the `RevitFileInfo` button to open the dialog with the Revit file information. If is a single file and the version of Revit is installed in the machine, the option to open the file appear.
+
 ## Features
 
 Show Revit File Version Information / Open Revit File in the respect Revit version.
