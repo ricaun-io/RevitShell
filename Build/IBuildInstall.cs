@@ -52,7 +52,7 @@ interface IBuildInstall : IRelease, ISign, IHazMainProject
 
             // Zip exe Files
             var exeFiles = Globbing.GlobFiles(outputInno, "**/*.exe");
-            exeFiles.ForEach(file => ZipExtension.ZipFileCompact(file));
+            exeFiles.ForEach(file => ZipExtension.ZipFileCompact(file, projectName));
 
             if (exeFiles.IsEmpty())
                 Serilog.Log.Error($"Not found any .exe file in {outputInno}");
@@ -70,9 +70,6 @@ interface IBuildInstall : IRelease, ISign, IHazMainProject
 
     AbsolutePath CreateTemporaryFile(AbsolutePath file, string projectVersion)
     {
-        //var tempFolder = Path.GetTempPath();
-        //var tempFile = Path.Combine(tempFolder, Path.GetFileName(file));
-
         var folder = file.Parent;
         var tempFileName = $"{Path.GetFileNameWithoutExtension(file)}_{DateTime.Now.Ticks}{Path.GetExtension(file)}";
 

@@ -32,6 +32,8 @@ Revit files have the following extensions:
 
 ## Installation
 
+* Download and install [RevitShell 1.0.x.exe](../../releases/latest/download/RevitShell.zip)
+
 ### Installation with InnoSetup
 
 In the InnoSetup the `ServerRegistrationManager.exe` is used to install/uninstall the extension.
