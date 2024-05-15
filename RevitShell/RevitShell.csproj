@@ -6,6 +6,39 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <!-- Release -->
+  <PropertyGroup Condition="!$(Configuration.Contains('Debug'))">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants></DefineConstants>
+    <NoWarn>MSB3052</NoWarn>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <!-- Debug -->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>ricaun</Company>
+    <Authors>Luiz Henrique Cassettari</Authors>
+    <CopyrightYears>$([System.DateTime]::Now.ToString('yyyy'))</CopyrightYears>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Windows Shell Extensions in .NET for Revit files.</Description>
+    <Product>$(AssemblyName)</Product>
+    <Copyright>Copyright © $(CopyrightYears) $(Company)</Copyright>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="SharpShell" Version="*" />
     <PackageReference Include="ServerRegistrationManager" Version="*" />
@@ -35,5 +68,20 @@
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
+
+  <!-- Fody -->
+  <!--
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="5.*" IncludeAssets="build; compile" PrivateAssets="all" />
+  </ItemGroup>
+  <PropertyGroup>
+    <WeaverConfiguration>
+      <Weavers>
+        <Costura ExcludeAssemblies="ServerRegistrationManager" />
+        <Costura CreateTemporaryAssemblies="true" />
+      </Weavers>
+    </WeaverConfiguration>
+  </PropertyGroup>
+  -->
 
 </Project>

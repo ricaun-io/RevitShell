@@ -7,9 +7,9 @@
 #define AppName "RevitShell"
 #define AppVersion "1.0.0"
 #define AppPublisher "ricaun"
-#define AppComments "RevitShell"
-#define AppBundle "RevitShell"
-#define AppURL "https://github.com/ricaun/RevitShell"
+#define AppComments "Windows Shell Extensions in .NET for Revit files. "
+#define AppFolder "RevitShell"
+#define AppURL "https://github.com/ricaun-io/RevitShell"
 #define AppEmail ""
 
 [Setup]
@@ -20,23 +20,23 @@ AppVersion={#AppVersion}
 AppPublisher={#AppPublisher}
 AppComments={#AppComments}
 
-VersionInfoVersion={#AppVersion}
+;VersionInfoVersion={#AppVersion}
 
 AppPublisherURL={#AppURL}
 AppSupportURL={#AppURL}
 AppUpdatesURL={#AppURL}
 
-DefaultDirName="C:\ProgramData\Autodesk\ApplicationPlugins\{#AppBundle}"
+DefaultDirName="{autopf}\{#AppFolder}"
 DisableWelcomePage=no
-DisableDirPage=yes
+DisableDirPage=no
 DisableProgramGroupPage=yes
 OutputBaseFilename="{#AppName} {#AppVersion}"
 UninstallDisplayName="{#AppName}"
 
-;LicenseFile=License.rtf
+LicenseFile="..\LICENSE"
 
 ; ICON CONFIGURATION
-;SetupIconFile=icon.ico
+SetupIconFile=icon.ico
 UninstallDisplayIcon={app}\unins000.exe
 
 ; Size: 55x55
@@ -57,10 +57,10 @@ Name: {app}; Permissions: users-full
 Name: "en"; MessagesFile: "compiler:Default.isl";
 
 [Files]
-Source: "..\{#AppBundle}\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs signonce
+Source: "..\{#AppFolder}\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs signonce
 
 [Run]
 Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "install ""{app}\RevitShell.dll"" -codebase"
 
 [UninstallRun]
-Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "uninstall ""{app}\RevitShell.dll""";
+Filename: "{app}\ServerRegistrationManager.exe"; Parameters: "uninstall ""{app}\RevitShell.dll"""; RunOnceId: "UninstallService"

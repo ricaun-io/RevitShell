@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitShell", "RevitShell\Re
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{9696E3E2-64BF-448C-ADA5-0CF7AD524249}"
 	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -14,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Install", "Install", "{35DB
 	ProjectSection(SolutionItems) = preProject
 		Install\RevitShell.iss = Install\RevitShell.iss
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Build", "Build\Build.csproj", "{21E16C70-B569-4AB2-832A-7303B79E5C25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +28,10 @@ Global
 		{FB9B3805-5C1A-4664-AA4B-B8AE4A2D6AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB9B3805-5C1A-4664-AA4B-B8AE4A2D6AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB9B3805-5C1A-4664-AA4B-B8AE4A2D6AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E16C70-B569-4AB2-832A-7303B79E5C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E16C70-B569-4AB2-832A-7303B79E5C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E16C70-B569-4AB2-832A-7303B79E5C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E16C70-B569-4AB2-832A-7303B79E5C25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
