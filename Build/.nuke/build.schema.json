@@ -57,6 +57,12 @@
           "type": "boolean",
           "description": "Shows the execution plan (HTML)"
         },
+        "PreReleaseFilter": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "Profile": {
           "type": "array",
           "description": "Defines the profiles to load",
@@ -92,6 +98,7 @@
               "BuildInstall",
               "Clean",
               "Compile",
+              "GitPreRelease",
               "GitRelease",
               "Release",
               "Sign"
@@ -112,6 +119,7 @@
               "BuildInstall",
               "Clean",
               "Compile",
+              "GitPreRelease",
               "GitRelease",
               "Release",
               "Sign"

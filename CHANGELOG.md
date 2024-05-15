@@ -6,11 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.1] / 2024-05-15
 - First Release
+### Updated
 - Update Package References
 - Add Build Project with installation
 - Update file order and version.
 - Update iss `version` with the project version.
-- Update iss folder location.
+- Update iss folder location option.
 
 ## [1.0.0] / 2023-05-22
 - First Pre Release
