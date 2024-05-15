@@ -29,7 +29,7 @@ namespace RevitShell
         {
             var menu = new ContextMenuStrip();
 
-            var title = nameof(RevitFileInfo) + " " + typeof(RevitFileInfo).Assembly.GetName().Version.ToString(3);
+            var title = nameof(RevitFileInfo) + " " + typeof(RevitContextMenu).Assembly.GetName().Version.ToString(3);
 
             var itemRevitVersionInfo = new ToolStripMenuItem
             {
@@ -51,7 +51,7 @@ namespace RevitShell
                     return false;
                 }
 
-                var revitFiles = SelectedItemPaths.Where(ValidRevitFile).ToList();
+                var revitFiles = SelectedItemPaths.Where(ValidRevitFile).OrderBy(e=>Path.GetFileName(e)).ToList();
 
                 if (revitFiles.Any() == false)
                     return;
