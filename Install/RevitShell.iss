@@ -7,7 +7,7 @@
 #define AppName "RevitShell"
 #define AppVersion "1.0.0"
 #define AppPublisher "ricaun"
-#define AppComments "RevitShell"
+#define AppComments "Windows Shell Extensions in .NET for Revit files. "
 #define AppFolder "RevitShell"
 #define AppURL "https://github.com/ricaun-io/RevitShell"
 #define AppEmail ""

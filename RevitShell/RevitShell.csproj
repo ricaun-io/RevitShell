@@ -34,7 +34,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>Package $(PackageId).</Description>
+    <Description>Windows Shell Extensions in .NET for Revit files.</Description>
     <Product>$(AssemblyName)</Product>
     <Copyright>Copyright © $(CopyrightYears) $(Company)</Copyright>
   </PropertyGroup>
